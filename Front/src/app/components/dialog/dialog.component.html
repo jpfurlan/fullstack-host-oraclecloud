@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>{{data.id ? 'Editar' : 'Adicionar'}} Item</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput [(ngModel)]="data.nome">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Quantidade</mat-label>
+    <input matInput [(ngModel)]="data.quantidade">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions style="style:flex; gap: 20px">
+  <button type="button" class="btn btn-primary" [mat-dialog-close]="data" cdkFocusInitial>Salvar</button>
+  <button type="button" class="btn btn-danger" (click)="onNoClick()">Cancelar</button>
+</div>
