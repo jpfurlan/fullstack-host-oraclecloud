@@ -12,7 +12,7 @@ services:
       - db
 
   db:
-    image: mysql:5.7 # ou a versão que você preferir
+    image: mysql:5.8 # ou a versão que você preferir
     environment:
       MYSQL_DATABASE: lista
       MYSQL_USER: root
