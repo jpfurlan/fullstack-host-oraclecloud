@@ -1,5 +1,5 @@
-# 1. Especifica a imagem base do Node.js. A tag '14' refere-se à versão do Node.js que você está usando.
-FROM node:14 AS build-stage
+# 1. Especifica a imagem base do Node.js. A tag '18' refere-se à versão do Node.js que você está usando.
+FROM node:18 AS build-stage
 
 # 2. Define o diretório de trabalho dentro do container para /app.
 WORKDIR /app
