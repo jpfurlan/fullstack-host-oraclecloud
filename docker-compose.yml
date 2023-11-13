@@ -23,7 +23,7 @@ services:
       - db-data:/var/lib/mysql
 
   client:
-    image: listafront
+    image: client
     ports:
       - "80:80"
 
