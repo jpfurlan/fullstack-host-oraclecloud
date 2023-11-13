@@ -4,12 +4,12 @@ import { Observable } from 'rxjs';
 import { ItemLista } from '../models/item-lista.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ListaDeComprasService {
-  private apiUrl = 'http://localhost:8080/api/lista';
+  private apiUrl = 'http://168.138.233.110:8080/api/lista';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getItems(): Observable<ItemLista[]> {
     return this.http.get<ItemLista[]>(this.apiUrl);
