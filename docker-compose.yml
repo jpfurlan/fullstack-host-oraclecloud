@@ -23,7 +23,7 @@ services:
       - db-data:/var/lib/mysql
 
   client:
-    image: client
+    image: frontlista
     ports:
       - "80:80"
 
