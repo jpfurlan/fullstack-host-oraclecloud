@@ -1,13 +1,13 @@
-package br.com.srcjp.lista;
+package br.com.campoamesa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ListaApplication {
+public class CampoamesaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ListaApplication.class, args);
+		SpringApplication.run(CampoamesaApplication.class, args);
 	}
 
 }
